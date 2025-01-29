@@ -1,0 +1,64 @@
+<!-- Task: Create a layout where three elements are positioned using static, relative, and absolute positioning. Each element should be clearly distinguishable with different background colors. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>container</title>
+    <style>
+      .parent-container {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        border: 2px solid #333;
+        margin: 50px;
+        padding: 10px;
+        background-color: #f5f5f5;
+      }
+
+      .static-box {
+        width: 100px;
+        height: 100px;
+        background-color: #ff7f7f;
+        border: 2px solid #ff0000;
+        margin-bottom: 10px;
+      }
+
+      .relative-box {
+        position: relative;
+        left: 50px;
+        top: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: #7fbfff;
+        border: 2px solid #0066cc;
+      }
+
+      .absolute-box {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 100px;
+        height: 100px;
+        background-color: #90ee90;
+        border: 2px solid #008000;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent-container">
+      <div class="static-box"></div>
+      <div class="relative-box"></div>
+      <div class="absolute-box"></div>
+    </div>
+  </body>
+</html>
